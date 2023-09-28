@@ -1,6 +1,8 @@
-from Login import login
 
 # Starting Creating list of the to do list
-login()
-my_list = []
-print("")
+
+my_list = ["Abdelhay"]
+new_element = input("Please enter something to the lest:  ")
+my_list.append(new_element)
+for element in my_list:
+    print(my_list, end = " ")
