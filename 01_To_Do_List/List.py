@@ -3,27 +3,28 @@
 
 my_list = ["Abdelhay", "zzadaddi"]
 
-# adding element to the to do list
-new_element = input("Please enter something to the lest:  ")
-trc = 0
-my_list.append(new_element)
-for element in my_list:
-    trc += 1
-    print("{} : {}".format(trc, element))
-
-trc = 0
-# removing element from the todo list
-rm = (int(input("Please enter the number of the To do u wanna to remove : ")) - 1)
-my_list.pop(rm)
-for element in my_list:
-    trc += 1
-    print('{} : {}'.format(trc, element))
 
 
-def add_to_list(my_list, new):
+
+def add_to_list(my_list):
     new = input("Please enter a task : ")
     my_list.append(new)
     return my_list
 
-def remove_list(my_list, rm):
-    rm (int(input("Please enter the order of the number of the to do you wanna to remove : ")))
+def remove_list(my_list):
+    rm = (int(input("Please enter the order of the number of the to do you wanna to remove : "))) - 1
+    my_list.pop(rm)
+    return my_list
+
+def print_list(my_list):
+    trc = 0
+    for element in my_list:
+        trc += 1
+        print('{} : {}'.format(trc, element))
+
+
+print_list(my_list)
+add = add_to_list(my_list)
+print_list(my_list)
+rm = remove_list(my_list)
+print_list(my_list)
