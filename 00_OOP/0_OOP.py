@@ -12,3 +12,5 @@ class Emplayee:
 emp_1 = Emplayee('Abdelhay', 'Zaadaddi', 11000)
 emp_2 = Emplayee('lhay', 'daddi', 11000)
 
+print(emp_1.Fullname)
+print(emp_1.Email)
