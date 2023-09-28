@@ -12,7 +12,11 @@ for element in my_list:
     print("{} : {}".format(trc, element))
 
 # removing element from the todo list
-rm = int(input("Please enter the number of the To do u wanna to remove")) - 1
+rm = int(input("Please enter the number of the To do u wanna to remove : "))
 my_list.remove(trc)
 for element in my_list:
     print('{} : {}'.format(trc, element))
+
+
+def add_to_list():
+    new = input
