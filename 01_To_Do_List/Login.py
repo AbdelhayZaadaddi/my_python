@@ -1,6 +1,7 @@
 import random
 import string
 from List import main_list
+
 # Function to generate a random code
 def generate_random_code(length = 6):
     characters = string.ascii_letters + string.digits
