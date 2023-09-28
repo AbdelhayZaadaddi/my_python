@@ -26,4 +26,4 @@ def add_to_list(my_list, new):
     return my_list
 
 def remove_list(my_list, rm):
-    rm (int(input("Please enter the order of the number of the to do you wanna to remove")))
+    rm (int(input("Please enter the order of the number of the to do you wanna to remove : ")))
