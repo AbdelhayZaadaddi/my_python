@@ -1,5 +1,7 @@
 from Login import send_code_to_user
 from Login import save_code_to_file
+from Login import generate_random_code
+from Login import check_code
 
 def main():
     # Main login/signup process
@@ -15,6 +17,9 @@ def main():
     
     print("A verification code has been sent to your email. Please check your inbox.")
 
+    # check code verfication
+    check_code(code)
 
+    
 if __name__ == "__main__":
     main()
