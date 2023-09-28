@@ -1,6 +1,6 @@
 import random
 import string
-
+from List import main_list
 # Function to generate a random code
 def generate_random_code(length = 6):
     characters = string.ascii_letters + string.digits
@@ -16,15 +16,10 @@ def save_code_to_file(email, password, code):
         file.write('Email : {}\nPassword : {}\nCode : {}'.format(email, password, code))
 
 
-# Main login/signup process
-email = input("Enter your email address: ")
-password = input("Enter your password : ")
-code = generate_random_code()
-    
-    # Send the code to the user (you can replace this with actual email sending)
-send_code_to_user(email, password, code)
-    
-    # Save the code to a file
-save_code_to_file(email, password, code)
-    
-print("A verification code has been sent to your email. Please check your inbox.")
+def check_code(code):
+    new_code = input("Please enter the Vercation code : ")
+    if new_code == code:
+        main_list()
+    else:
+        print("Fuck you man!")
+        exit()

@@ -22,11 +22,14 @@ def print_list(my_list):
 
 
 
-while star != 0:
-    star = int(input("Please enter '1' to start and '0' to exit: "))
-    if star == 1:
-        print_list(my_list)
-        my_list = add_to_list(my_list)
-        print_list(my_list)
-        my_list = remove_list(my_list)
-        print_list(my_list)
+
+
+def main_list():
+    while star != 0:
+        star = int(input("Please enter '1' to start and '0' to exit: "))
+        if star == 1:
+            print_list(my_list)
+            my_list = add_to_list(my_list)
+            print_list(my_list)
+            my_list = remove_list(my_list)
+            print_list(my_list)
