@@ -12,6 +12,3 @@ class Emplayee:
 emp_1 = Emplayee('Abdelhay', 'Zaadaddi', 11000)
 emp_2 = Emplayee('lhay', 'daddi', 11000)
 
-fullname = fullname()
-print(fullname)
-print(emp_2)
