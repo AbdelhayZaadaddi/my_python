@@ -14,7 +14,7 @@ def send_code_to_user(email, password, code):
 # Function to save the code in a file
 def save_code_to_file(email, password, code):
     with open("Verfication_codes.text", "a") as file:
-        file.write('Email : {}\nPassword : {}\nCode : {}'.format(email, password, code))
+        file.write('Email : {}\nPassword : {}\nCode : {} \n\n'.format(email, password, code))
 
 
 def check_code(code):
