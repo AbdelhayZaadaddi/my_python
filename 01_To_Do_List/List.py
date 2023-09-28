@@ -2,9 +2,7 @@
 # Starting Creating list of the to do list
 
 my_list = ["Abdelhay", "zzadaddi"]
-
-
-
+star = 1
 
 def add_to_list(my_list):
     new = input("Please enter a task : ")
@@ -23,8 +21,12 @@ def print_list(my_list):
         print('{} : {}'.format(trc, element))
 
 
-print_list(my_list)
-add = add_to_list(my_list)
-print_list(my_list)
-rm = remove_list(my_list)
-print_list(my_list)
+
+while star != 0:
+    star = int(input("Please enter '1' to start and '0' to exit: "))
+    if star == 1:
+        print_list(my_list)
+        my_list = add_to_list(my_list)
+        print_list(my_list)
+        my_list = remove_list(my_list)
+        print_list(my_list)
